@@ -1,0 +1,176 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: helvetica;
+}
+
+p {
+    color: grey;
+}
+
+.flex, #search-bar-container, .rec-vid-container {
+    display: flex;
+}
+
+.flex {
+    gap: 25px;
+}
+
+.rec-vid-container {
+    gap: 10px;
+}
+
+button, .icon {
+    cursor: pointer;
+}
+
+.icon {
+    cursor: pointer;
+    color: grey;
+    font-size: 1.2rem;
+}
+
+#logo {
+    width: 90px;
+}
+
+input {
+    width: 100%;
+}
+
+input, button {
+    padding: 5px;
+    display: block;
+}
+
+button {
+    width: 60px;
+    color: grey;
+}
+
+#logo, #profile, #menu, .icon .fa, #search-bar-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);   
+}
+
+.big-display {
+    display: none;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 35px;
+}
+
+#upper-vid-info-box {
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#vid-desc-container {
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+}
+
+#thumbs-container {
+    border-bottom: 2px solid grey;
+    padding-bottom: 15px;
+}
+
+#vid-info span {
+    font-weight: bold;
+}
+
+#vid-info span, .thumb {
+    cursor: pointer;
+}
+
+.thumb {
+    color: grey;
+    font-size: 1.7rem;
+}
+
+#vid-info {
+    width: 100%;
+}
+
+#vid-info > div:first-child {
+    padding-top: 15px;
+
+}
+
+nav.flex {
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid grey;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+}
+
+iframe {
+    width: 100%;
+}
+
+main .rec-vid-container:not(:first-child) {
+    margin-top: 5px;
+}
+
+main {
+    margin-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (min-width: 650px) {
+    .mic {
+        margin-right: 42px;
+    }
+    
+    nav.flex {
+        padding: 10px 43px;        
+    }
+    
+    .big-display {
+        display: block;
+    }
+    
+    .mobile-search {
+        display: none;
+    }
+    
+    input {
+        width: 20vw;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1.3fr;
+        padding: 20px 65px;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    input {
+        width: 45vw;
+    }    
+}
