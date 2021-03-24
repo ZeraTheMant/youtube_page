@@ -197,6 +197,9 @@ a {
     z-index: -1;
 }
 
+#rec-vids-section {
+	margin-top: 15px;
+}
 
 
 @media screen and (min-width: 550px) {
@@ -239,6 +242,7 @@ a {
 	
 	#rec-vids-section {
 		grid-area: b;
+		margin-top: 0;
 	}
 	
 	#comments-section {
