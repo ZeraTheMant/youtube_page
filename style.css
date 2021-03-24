@@ -199,7 +199,7 @@ a {
 
 
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 550px) {
     .mic {
         margin-right: 42px;
     }
@@ -223,9 +223,15 @@ a {
     main {
         display: grid;
         grid-template-columns: 2fr 1.3fr;
-        padding: 20px 65px;
         grid-gap: 20px;
+        padding: 20px 65px;
     }
+}
+
+@media screen and (min-width: 250px) and (max-width: 800px) {
+    main {
+        padding: 20px 30px;
+    }    
 }
 
 @media screen and (min-width: 800px) {
