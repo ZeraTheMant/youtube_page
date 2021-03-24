@@ -221,11 +221,29 @@ a {
     }
     
     main {
-        display: grid;
-        grid-template-columns: 2fr 1.3fr;
-        grid-gap: 20px;
         padding: 20px 65px;
     }
+	
+	#halved-container {
+        display: grid;
+        /*grid-template-columns: 2fr 1.3fr;*/
+		grid-template-areas:
+			"a b"
+			"c b";
+        grid-gap: 20px;		
+	}
+	
+	#player-section {
+		grid-area: a;
+	}
+	
+	#rec-vids-section {
+		grid-area: b;
+	}
+	
+	#comments-section {
+		grid-area: c;
+	}
 }
 
 @media screen and (min-width: 250px) and (max-width: 800px) {
